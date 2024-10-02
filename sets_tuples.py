@@ -114,25 +114,26 @@ Verily, this vichyssoise of verbiage veers most verbose, so let me simply add th
 and you may call me V."""
 
 
+
 # Convert the text to a tuple of characters
-
-
+tuple = (tuple(text))
+print(tuple)
 
 
 # Tuple to store the target characters
-
-
+occurance = tuple.count('v')
+occurance2 = tuple.count('V')
 
 
 
 
 # Count occurrences of 'v' or 'V' by filtering the text_tuple
-
+tuple  = (occurance + occurance2)
 
 
 
 # Output the result
-
+print(tuple)
 
 
 
@@ -140,14 +141,30 @@ and you may call me V."""
 #Suppose we have a dictionary containing multiple lists as values, and you want to access a specific element from one of these lists.
 # Define the dictionary
 
-
 sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # get length of the list
+print(sample_list[0])
+print(sample_list[1])
+print(sample_list[2])
 print(len(sample_list)) # Output: 3
+#extract the 8 out of the list 
+print(sample_list[2][1])
+print(sample_list[1][2])
+print(len(sample_list))
 #this is called a nested list
 # Extract and print the second element from the first list
+sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
+# Extract and print the second fruit from the list
+print(sample_list_of_fruit["fruits"][2])
+print(sample_list_of_fruit["fruits"][0])
 
 
+
+sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
+# Extract and print the third element from the second list
+print(sample_list_of_lists["lists"][1][2])
+print(sample_list_of_lists["lists"][2][2])
+print(sample_list_of_lists["lists"][0][2])
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
 
@@ -158,9 +175,12 @@ sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 
 
 
-sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
+sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25},
+                                   {"name": "Bob", "age": 30},
+                                     {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
-
+print(sample_list_of_dicts["dicts"][1]["age"])
+print(sample_list_of_dicts["dicts"][2]["name"])
 
 
 
